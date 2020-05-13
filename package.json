@@ -1,0 +1,24 @@
+{
+  "name": "plumpPlum",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "react-native start",
+    "test": "jest"
+  },
+  "dependencies": {
+    "react": "16.8.3",
+    "react-native": "^0.59.9"
+  },
+  "devDependencies": {
+    "@babel/core": "7.9.6",
+    "@babel/runtime": "7.9.6",
+    "babel-jest": "26.0.1",
+    "jest": "26.0.1",
+    "metro-react-native-babel-preset": "0.59.0",
+    "react-test-renderer": "16.8.3"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}

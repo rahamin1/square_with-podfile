@@ -1,0 +1,3 @@
+rootProject.name = 'plumpPlum'
+
+include ':app'
