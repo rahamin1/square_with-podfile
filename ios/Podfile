@@ -1,0 +1,49 @@
+platform :ios, '11.0'
+
+target 'plumpPlum' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for plumpPlum
+
+  target 'plumpPlumTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  rn_path = '../node_modules/react-native'
+  pod 'React', path: rn_path, subspecs: [
+  'CxxBridge',
+  'RCTText',
+  'RCTNetwork',
+  'RCTWebSocket',
+  'RCTAnimation',
+  'RCTActionSheet',
+  'RCTGeolocation',
+  'RCTImage',
+  'RCTSettings',
+  'RCTVibration',
+  'RCTLinkingIOS'
+  ]
+  pod 'yoga', :path => "#{rn_path}/ReactCommon/yoga"
+  pod 'DoubleConversion', :podspec => '../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec'
+  pod 'glog', :podspec => '../node_modules/react-native/third-party-podspecs/glog.podspec'
+  pod 'Folly', :podspec => '../node_modules/react-native/third-party-podspecs/Folly.podspec'
+  
+  pod 'RNSquareInAppPayments', :path => '../node_modules/react-native-square-in-app-payments'
+
+
+end
+
+target 'plumpPlum-tvOS' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for plumpPlum-tvOS
+
+  target 'plumpPlum-tvOSTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end
