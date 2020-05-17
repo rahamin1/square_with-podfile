@@ -1,0 +1,6 @@
+framework module Pods_plumpPlumTests {
+  umbrella header "Pods-plumpPlumTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,6 @@
+framework module RNSquareInAppPayments {
+  umbrella header "RNSquareInAppPayments-umbrella.h"
+
+  export *
+  module * { export * }
+}
